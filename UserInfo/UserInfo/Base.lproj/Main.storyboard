@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G2136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,33 +19,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpG-5t-fyy">
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpG-5t-fyy">
+                                <frame key="frameInset" minY="120" width="375" height="547"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="eRo-VQ-bmo" kind="embed" id="k67-7r-YeR"/>
                                 </connections>
                             </containerView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6jW-RV-X4Z">
-                                <frame key="frameInset" minX="16" minY="70" width="100" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhF-w0-j9u">
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG2" translatesAutoresizingMaskIntoConstraints="NO" id="6jW-RV-X4Z">
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="DRY-xr-qRG"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="O0C-qY-iSw"/>
+                                            <constraint firstAttribute="width" constant="100" id="Pf6-zI-DJk"/>
+                                            <constraint firstAttribute="height" constant="100" id="V0X-uP-24l"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="lEQ-Qj-tyn"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="nMp-hM-DxU"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Pf6-zI-DJk"/>
-                                    <constraint firstAttribute="height" constant="100" id="V0X-uP-24l"/>
+                                    <constraint firstItem="6jW-RV-X4Z" firstAttribute="top" secondItem="fhF-w0-j9u" secondAttribute="top" constant="1" id="NsW-Bt-Gyk"/>
+                                    <constraint firstItem="6jW-RV-X4Z" firstAttribute="leading" secondItem="fhF-w0-j9u" secondAttribute="leading" constant="1" id="Pru-Zt-deD"/>
+                                    <constraint firstAttribute="width" constant="102" id="eLW-kw-XXZ"/>
+                                    <constraint firstAttribute="height" constant="102" id="n8S-3H-PFS"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
+                                        <real key="value" value="51"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </imageView>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.46666666666666667" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mpG-5t-fyy" secondAttribute="bottom" id="8NA-T2-RwD"/>
-                            <constraint firstItem="mpG-5t-fyy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="AgW-kz-3R0"/>
-                            <constraint firstItem="6jW-RV-X4Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="HqG-lp-OcN"/>
-                            <constraint firstItem="mpG-5t-fyy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ijI-lP-RK7"/>
-                            <constraint firstItem="6jW-RV-X4Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mBM-Yq-CyR"/>
-                            <constraint firstAttribute="trailing" secondItem="mpG-5t-fyy" secondAttribute="trailing" id="oOc-OL-1eW"/>
-                            <constraint firstItem="6jW-RV-X4Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="yZg-Kk-bl4"/>
+                            <constraint firstItem="fhF-w0-j9u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="5nu-9O-JaS"/>
+                            <constraint firstItem="fhF-w0-j9u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="X7N-bR-OXw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -56,6 +74,10 @@
         <scene sceneID="GCJ-EM-MVm">
             <objects>
                 <viewController id="eRo-VQ-bmo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eG0-Yx-8H5"/>
+                        <viewControllerLayoutGuide type="bottom" id="en0-Pw-pNv"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SIA-Wn-BLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,4 +88,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="WechatIMG2" width="178" height="186"/>
+    </resources>
 </document>
