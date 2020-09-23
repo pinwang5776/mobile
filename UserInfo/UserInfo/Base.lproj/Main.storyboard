@@ -17,18 +17,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j98-Gz-xIK" userLabel="header">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njQ-8L-7sY" userLabel="EditButton">
+                                        <rect key="frame" x="319" y="110" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="HSE-eM-EFi"/>
+                                            <constraint firstAttribute="width" constant="35" id="Sl2-Xx-5Rq"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="edit"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCU-je-43j" userLabel="ConfigButton">
+                                        <rect key="frame" x="369" y="110" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="FPQ-Ls-ye8"/>
+                                            <constraint firstAttribute="height" constant="35" id="nDw-kZ-Iih"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="config"/>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.9137254901960784" green="0.46666666666666667" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="Yuk-Sd-uPZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="YCU-je-43j" secondAttribute="trailing" constant="10" id="0jI-7h-0q4"/>
+                                    <constraint firstAttribute="bottom" secondItem="njQ-8L-7sY" secondAttribute="bottom" constant="5" id="EhM-K3-mwN"/>
+                                    <constraint firstAttribute="height" constant="150" id="PMv-7E-Lfl"/>
+                                    <constraint firstAttribute="bottom" secondItem="YCU-je-43j" secondAttribute="bottom" constant="5" id="WnR-iE-bXo"/>
+                                    <constraint firstItem="YCU-je-43j" firstAttribute="leading" secondItem="njQ-8L-7sY" secondAttribute="trailing" constant="15" id="loC-YG-ZKe"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTR-N8-4Us" userLabel="body">
-                                <rect key="frame" x="0.0" y="125" width="414" height="771"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knA-Bb-s68" userLabel="photoContainer">
-                                <rect key="frame" x="19" y="93" width="102" height="102"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knA-Bb-s68" userLabel="photoContainer">
+                                <rect key="frame" x="19" y="74" width="102" height="102"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG2" translatesAutoresizingMaskIntoConstraints="NO" id="rsm-Th-rQe">
                                         <rect key="frame" x="1" y="1" width="100" height="100"/>
@@ -56,19 +74,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTR-N8-4Us" userLabel="body">
+                                <rect key="frame" x="0.0" y="175" width="414" height="721"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PTR-N8-4Us" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0rT-BK-Ikw"/>
+                            <constraint firstAttribute="trailing" secondItem="PTR-N8-4Us" secondAttribute="trailing" id="4t8-OR-Afm"/>
+                            <constraint firstItem="knA-Bb-s68" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="19" id="BsW-Ub-kRU"/>
+                            <constraint firstItem="PTR-N8-4Us" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Buw-05-OOs"/>
                             <constraint firstItem="j98-Gz-xIK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NA9-pN-ell"/>
-                            <constraint firstItem="knA-Bb-s68" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="eox-hD-LFK"/>
-                            <constraint firstAttribute="bottom" secondItem="PTR-N8-4Us" secondAttribute="bottom" id="fcv-1M-Fpe"/>
+                            <constraint firstAttribute="bottom" secondItem="PTR-N8-4Us" secondAttribute="bottom" id="Uio-1K-siE"/>
+                            <constraint firstItem="knA-Bb-s68" firstAttribute="top" secondItem="j98-Gz-xIK" secondAttribute="bottom" constant="-76" id="cOB-II-brt"/>
                             <constraint firstItem="j98-Gz-xIK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qap-jm-110"/>
-                            <constraint firstItem="PTR-N8-4Us" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u7Y-rC-o7S"/>
                             <constraint firstItem="j98-Gz-xIK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uAs-BL-DWx"/>
-                            <constraint firstItem="PTR-N8-4Us" firstAttribute="top" secondItem="j98-Gz-xIK" secondAttribute="bottom" id="ytP-C5-9h7"/>
-                            <constraint firstItem="knA-Bb-s68" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="zeq-nD-fK3"/>
+                            <constraint firstItem="PTR-N8-4Us" firstAttribute="top" secondItem="j98-Gz-xIK" secondAttribute="bottom" constant="25" id="w0M-Z7-0c1"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -79,6 +101,8 @@
     </scenes>
     <resources>
         <image name="WechatIMG2" width="178" height="186"/>
+        <image name="config" width="200" height="200"/>
+        <image name="edit" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
