@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j98-Gz-xIK" userLabel="header">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                                <color key="backgroundColor" red="0.9137254901960784" green="0.46666666666666667" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Yuk-Sd-uPZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTR-N8-4Us" userLabel="body">
+                                <rect key="frame" x="0.0" y="125" width="414" height="771"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knA-Bb-s68" userLabel="photoContainer">
+                                <rect key="frame" x="19" y="93" width="102" height="102"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG2" translatesAutoresizingMaskIntoConstraints="NO" id="rsm-Th-rQe">
+                                        <rect key="frame" x="1" y="1" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="FpR-OA-uSh"/>
+                                            <constraint firstAttribute="height" constant="100" id="Mmo-uU-nxn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="conerRadius">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="9b1-UC-KCB"/>
+                                    <constraint firstItem="rsm-Th-rQe" firstAttribute="top" secondItem="knA-Bb-s68" secondAttribute="top" constant="1" id="IqZ-cl-KvC"/>
+                                    <constraint firstItem="rsm-Th-rQe" firstAttribute="leading" secondItem="knA-Bb-s68" secondAttribute="leading" constant="1" id="QGJ-g4-Aw8"/>
+                                    <constraint firstAttribute="height" constant="102" id="uGb-eS-LPZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="conerRadius">
+                                        <real key="value" value="51"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PTR-N8-4Us" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0rT-BK-Ikw"/>
+                            <constraint firstItem="j98-Gz-xIK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NA9-pN-ell"/>
+                            <constraint firstItem="knA-Bb-s68" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="eox-hD-LFK"/>
+                            <constraint firstAttribute="bottom" secondItem="PTR-N8-4Us" secondAttribute="bottom" id="fcv-1M-Fpe"/>
+                            <constraint firstItem="j98-Gz-xIK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qap-jm-110"/>
+                            <constraint firstItem="PTR-N8-4Us" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u7Y-rC-o7S"/>
+                            <constraint firstItem="j98-Gz-xIK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uAs-BL-DWx"/>
+                            <constraint firstItem="PTR-N8-4Us" firstAttribute="top" secondItem="j98-Gz-xIK" secondAttribute="bottom" id="ytP-C5-9h7"/>
+                            <constraint firstItem="knA-Bb-s68" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="zeq-nD-fK3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WechatIMG2" width="178" height="186"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
