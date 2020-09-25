@@ -197,11 +197,30 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enB-Fu-Q8N" userLabel="ActivitiesBorder">
-                                        <rect key="frame" x="0.0" y="100.5" width="414" height="555.5"/>
+                                        <rect key="frame" x="0.0" y="105.5" width="414" height="550.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdY-rP-279" userLabel="Activities">
-                                                <rect key="frame" x="0.0" y="2" width="414" height="553.5"/>
+                                                <rect key="frame" x="0.0" y="2" width="414" height="548.5"/>
+                                                <subviews>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vmb-Zu-Wfp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="qnv-S5-0rG"/>
+                                                        </constraints>
+                                                        <segments>
+                                                            <segment title="JOINED"/>
+                                                            <segment title="CREATED"/>
+                                                            <segment title="REVIEWS"/>
+                                                        </segments>
+                                                    </segmentedControl>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="vmb-Zu-Wfp" secondAttribute="trailing" id="5N6-on-9nd"/>
+                                                    <constraint firstItem="vmb-Zu-Wfp" firstAttribute="top" secondItem="qdY-rP-279" secondAttribute="top" id="BFp-m6-2Rj"/>
+                                                    <constraint firstItem="vmb-Zu-Wfp" firstAttribute="leading" secondItem="qdY-rP-279" secondAttribute="leading" id="UzN-zu-Yg3"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
@@ -218,7 +237,7 @@
                                     <constraint firstItem="WP7-Ad-chH" firstAttribute="leading" secondItem="PTR-N8-4Us" secondAttribute="leading" constant="20" symbolic="YES" id="Nmt-WR-9gV"/>
                                     <constraint firstAttribute="bottom" secondItem="enB-Fu-Q8N" secondAttribute="bottom" constant="90" id="PPC-aB-3JM"/>
                                     <constraint firstAttribute="trailing" secondItem="WP7-Ad-chH" secondAttribute="trailing" constant="20" symbolic="YES" id="SBP-Jk-lT4"/>
-                                    <constraint firstItem="enB-Fu-Q8N" firstAttribute="top" secondItem="WP7-Ad-chH" secondAttribute="bottom" constant="10" id="YPs-SZ-Hj1"/>
+                                    <constraint firstItem="enB-Fu-Q8N" firstAttribute="top" secondItem="WP7-Ad-chH" secondAttribute="bottom" constant="15" id="YPs-SZ-Hj1"/>
                                     <constraint firstAttribute="trailing" secondItem="enB-Fu-Q8N" secondAttribute="trailing" id="gU2-6H-cj6"/>
                                     <constraint firstItem="enB-Fu-Q8N" firstAttribute="leading" secondItem="PTR-N8-4Us" secondAttribute="leading" id="hIb-mu-EKV"/>
                                     <constraint firstItem="WP7-Ad-chH" firstAttribute="top" secondItem="PTR-N8-4Us" secondAttribute="top" constant="5" id="soA-id-v7n"/>
