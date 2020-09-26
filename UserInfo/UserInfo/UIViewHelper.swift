@@ -2,7 +2,7 @@ import UIKit
 
 extension UIView {
     @IBInspectable
-    var conerRadius: CGFloat {
+    var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }

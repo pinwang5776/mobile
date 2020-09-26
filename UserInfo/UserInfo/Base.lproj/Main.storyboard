@@ -197,44 +197,121 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enB-Fu-Q8N" userLabel="ActivitiesBorder">
-                                        <rect key="frame" x="0.0" y="105.5" width="414" height="550.5"/>
+                                        <rect key="frame" x="0.0" y="100.5" width="414" height="555.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdY-rP-279" userLabel="Activities">
-                                                <rect key="frame" x="0.0" y="2" width="414" height="548.5"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qdY-rP-279" userLabel="Activities">
+                                                <rect key="frame" x="0.0" y="0.5" width="414" height="553.5"/>
                                                 <subviews>
-                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vmb-Zu-Wfp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="qnv-S5-0rG"/>
-                                                        </constraints>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q4t-4E-Sxg" userLabel="Second View">
+                                                        <rect key="frame" x="0.0" y="39" width="414" height="475"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <prototypes>
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JoinedCell" rowHeight="125" id="BG5-RB-3jZ" customClass="JoinedCell" customModule="UserInfo" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="28" width="414" height="125"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BG5-RB-3jZ" id="Bxb-oH-Zyy">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXu-Hf-nsN">
+                                                                            <rect key="frame" x="124" y="64" width="270" height="31"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <color key="backgroundColor" red="0.84135252240000002" green="0.49873769280000002" blue="0.47057586909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WechatIMG1" translatesAutoresizingMaskIntoConstraints="NO" id="W8p-Xa-dqL">
+                                                                            <rect key="frame" x="13" y="11" width="103" height="105"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wuj-zg-90C">
+                                                                            <rect key="frame" x="124" y="25" width="270" height="31"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <color key="backgroundColor" red="0.84135252240000002" green="0.49873769280000002" blue="0.47057586909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </tableViewCellContentView>
+                                                                <accessibility key="accessibilityConfiguration" identifier="JoinedCell"/>
+                                                                <gestureRecognizers/>
+                                                                <connections>
+                                                                    <outlet property="activityLabel" destination="Wuj-zg-90C" id="0js-5D-wAs"/>
+                                                                    <outlet property="dateLabel" destination="FXu-Hf-nsN" id="FPj-6N-4bF"/>
+                                                                    <outlet property="imageLabel" destination="W8p-Xa-dqL" id="fOE-mC-igy"/>
+                                                                </connections>
+                                                            </tableViewCell>
+                                                        </prototypes>
+                                                    </tableView>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gEc-XE-VxG" userLabel="First View">
+                                                        <rect key="frame" x="0.0" y="39" width="414" height="475"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <prototypes>
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CreatedCell" rowHeight="125" id="qc1-Bk-QLl" customClass="CreatedCell" customModule="UserInfo" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="28" width="414" height="125"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qc1-Bk-QLl" id="bX7-5u-BwV">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjJ-4P-HJ6">
+                                                                            <rect key="frame" x="124" y="64" width="270" height="31"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <color key="backgroundColor" red="0.84135252240000002" green="0.49873769280000002" blue="0.47057586909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WechatIMG1" translatesAutoresizingMaskIntoConstraints="NO" id="v0f-Le-sG2">
+                                                                            <rect key="frame" x="13" y="11" width="103" height="105"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7P-Ad-KuB">
+                                                                            <rect key="frame" x="124" y="25" width="270" height="31"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <color key="backgroundColor" red="0.84135252240000002" green="0.49873769280000002" blue="0.47057586909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </tableViewCellContentView>
+                                                                <accessibility key="accessibilityConfiguration" identifier="CreatedCell"/>
+                                                                <gestureRecognizers/>
+                                                                <connections>
+                                                                    <outlet property="activityLabel" destination="n7P-Ad-KuB" id="kMw-Vg-nW8"/>
+                                                                    <outlet property="dateLabel" destination="QjJ-4P-HJ6" id="43Z-0g-Fb5"/>
+                                                                    <outlet property="imageLabel" destination="v0f-Le-sG2" id="tRQ-0U-va6"/>
+                                                                </connections>
+                                                            </tableViewCell>
+                                                        </prototypes>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="xE4-zw-dH5"/>
+                                                        </connections>
+                                                    </tableView>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KNb-3F-iCZ">
+                                                        <rect key="frame" x="78" y="8" width="259" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <gestureRecognizers/>
                                                         <segments>
-                                                            <segment title="JOINED"/>
-                                                            <segment title="CREATED"/>
-                                                            <segment title="REVIEWS"/>
+                                                            <segment title="Created Activities"/>
+                                                            <segment title="Joined Activities"/>
                                                         </segments>
                                                         <connections>
-                                                            <action selector="segChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="VDu-4F-Yxi"/>
+                                                            <action selector="indexChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="h1Y-v9-UP9"/>
                                                         </connections>
                                                     </segmentedControl>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiD-u7-MfW">
-                                                        <rect key="frame" x="186.5" y="264" width="41.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="SiD-u7-MfW" firstAttribute="centerX" secondItem="qdY-rP-279" secondAttribute="centerX" id="1I9-ly-V1v"/>
-                                                    <constraint firstAttribute="trailing" secondItem="vmb-Zu-Wfp" secondAttribute="trailing" id="5N6-on-9nd"/>
-                                                    <constraint firstItem="vmb-Zu-Wfp" firstAttribute="top" secondItem="qdY-rP-279" secondAttribute="top" id="BFp-m6-2Rj"/>
-                                                    <constraint firstItem="vmb-Zu-Wfp" firstAttribute="leading" secondItem="qdY-rP-279" secondAttribute="leading" id="UzN-zu-Yg3"/>
-                                                    <constraint firstItem="SiD-u7-MfW" firstAttribute="centerY" secondItem="qdY-rP-279" secondAttribute="centerY" id="eC6-Lr-3YF"/>
-                                                </constraints>
+                                                <gestureRecognizers/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="qdY-rP-279" firstAttribute="top" secondItem="enB-Fu-Q8N" secondAttribute="top" constant="2" id="6R8-iG-bkj"/>
                                             <constraint firstItem="qdY-rP-279" firstAttribute="leading" secondItem="enB-Fu-Q8N" secondAttribute="leading" id="FUa-Da-L0F"/>
@@ -248,7 +325,7 @@
                                     <constraint firstItem="WP7-Ad-chH" firstAttribute="leading" secondItem="PTR-N8-4Us" secondAttribute="leading" constant="20" symbolic="YES" id="Nmt-WR-9gV"/>
                                     <constraint firstAttribute="bottom" secondItem="enB-Fu-Q8N" secondAttribute="bottom" constant="90" id="PPC-aB-3JM"/>
                                     <constraint firstAttribute="trailing" secondItem="WP7-Ad-chH" secondAttribute="trailing" constant="20" symbolic="YES" id="SBP-Jk-lT4"/>
-                                    <constraint firstItem="enB-Fu-Q8N" firstAttribute="top" secondItem="WP7-Ad-chH" secondAttribute="bottom" constant="15" id="YPs-SZ-Hj1"/>
+                                    <constraint firstItem="enB-Fu-Q8N" firstAttribute="top" secondItem="WP7-Ad-chH" secondAttribute="bottom" constant="10" id="YPs-SZ-Hj1"/>
                                     <constraint firstAttribute="trailing" secondItem="enB-Fu-Q8N" secondAttribute="trailing" id="gU2-6H-cj6"/>
                                     <constraint firstItem="enB-Fu-Q8N" firstAttribute="leading" secondItem="PTR-N8-4Us" secondAttribute="leading" id="hIb-mu-EKV"/>
                                     <constraint firstItem="WP7-Ad-chH" firstAttribute="top" secondItem="PTR-N8-4Us" secondAttribute="top" constant="5" id="soA-id-v7n"/>
@@ -271,7 +348,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="k72-oi-v1Q" userLabel="Me"/>
                     <connections>
-                        <outlet property="label" destination="SiD-u7-MfW" id="Zsw-sX-OOx"/>
+                        <outlet property="firstView" destination="gEc-XE-VxG" id="n1h-jY-YXM"/>
+                        <outlet property="secondView" destination="q4t-4E-Sxg" id="ctb-8y-kDp"/>
+                        <outlet property="segmentedControl" destination="KNb-3F-iCZ" id="FEI-03-Dgq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
