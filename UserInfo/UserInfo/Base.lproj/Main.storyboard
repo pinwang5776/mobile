@@ -213,13 +213,24 @@
                                                             <segment title="CREATED"/>
                                                             <segment title="REVIEWS"/>
                                                         </segments>
+                                                        <connections>
+                                                            <action selector="segChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="VDu-4F-Yxi"/>
+                                                        </connections>
                                                     </segmentedControl>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiD-u7-MfW">
+                                                        <rect key="frame" x="186.5" y="264" width="41.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="SiD-u7-MfW" firstAttribute="centerX" secondItem="qdY-rP-279" secondAttribute="centerX" id="1I9-ly-V1v"/>
                                                     <constraint firstAttribute="trailing" secondItem="vmb-Zu-Wfp" secondAttribute="trailing" id="5N6-on-9nd"/>
                                                     <constraint firstItem="vmb-Zu-Wfp" firstAttribute="top" secondItem="qdY-rP-279" secondAttribute="top" id="BFp-m6-2Rj"/>
                                                     <constraint firstItem="vmb-Zu-Wfp" firstAttribute="leading" secondItem="qdY-rP-279" secondAttribute="leading" id="UzN-zu-Yg3"/>
+                                                    <constraint firstItem="SiD-u7-MfW" firstAttribute="centerY" secondItem="qdY-rP-279" secondAttribute="centerY" id="eC6-Lr-3YF"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -259,6 +270,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="k72-oi-v1Q" userLabel="Me"/>
+                    <connections>
+                        <outlet property="label" destination="SiD-u7-MfW" id="Zsw-sX-OOx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
