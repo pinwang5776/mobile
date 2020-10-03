@@ -9,7 +9,7 @@ import UIKit
 
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
-    
+
   // data source of created activities
     var activities = ["活动1","活动2","活动3","活动4","活动5","活动6","活动7","活动8"]
     var imageofactivities = UIImage(named:"WechatIMG1.jpg")
@@ -54,14 +54,13 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
                break;
            }
        }
-    @IBOutlet weak var PhotoContainer: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         firstView.isHidden = false
         secondView.isHidden = true
-        PhotoContainer.layer.cornerRadius = PhotoContainer.frame.size.width / 2
-        PhotoContainer.clipsToBounds = true
+       
         // Do any additional setup after loading the view.
     }
 

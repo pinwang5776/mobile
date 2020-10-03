@@ -150,11 +150,6 @@
                                             <constraint firstAttribute="width" constant="100" id="FpR-OA-uSh"/>
                                             <constraint firstAttribute="height" constant="100" id="Mmo-uU-nxn"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="conerRadius">
-                                                <real key="value" value="50"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -164,11 +159,6 @@
                                     <constraint firstItem="rsm-Th-rQe" firstAttribute="leading" secondItem="knA-Bb-s68" secondAttribute="leading" constant="1" id="QGJ-g4-Aw8"/>
                                     <constraint firstAttribute="height" constant="102" id="uGb-eS-LPZ"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="conerRadius">
-                                        <real key="value" value="51"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTR-N8-4Us" userLabel="Body">
                                 <rect key="frame" x="0.0" y="150" width="414" height="746"/>
@@ -348,7 +338,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="k72-oi-v1Q" userLabel="Me"/>
                     <connections>
-                        <outlet property="PhotoContainer" destination="knA-Bb-s68" id="LgQ-id-TlW"/>
+                        <outlet property="PhotoContainer" destination="knA-Bb-s68" id="6OX-qD-zOI"/>
                         <outlet property="firstView" destination="gEc-XE-VxG" id="n1h-jY-YXM"/>
                         <outlet property="secondView" destination="q4t-4E-Sxg" id="ctb-8y-kDp"/>
                         <outlet property="segmentedControl" destination="KNb-3F-iCZ" id="FEI-03-Dgq"/>
