@@ -62,6 +62,8 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         secondView.isHidden = true
         PhotoContainer.layer.cornerRadius = PhotoContainer.frame.size.width / 2
         PhotoContainer.clipsToBounds = true
+        firstView.layer.cornerRadius = 20
+        firstView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
 
