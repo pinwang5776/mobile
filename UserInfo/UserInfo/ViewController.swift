@@ -11,7 +11,6 @@ import Firebase
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
-
   // data source of created activities
     var activities = ["活动1","活动2","活动3","活动4","活动5","活动6","活动7","活动8"]
     var imageofactivities = UIImage(named:"WechatIMG1.jpg")
