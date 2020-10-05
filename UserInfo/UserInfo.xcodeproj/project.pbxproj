@@ -32,7 +32,7 @@
 		82EF8C19251AE85300C86AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82EF8C21251AEBF900C86AE5 /* UIViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
 		858D6EA2B67B8BC880E4E0F2 /* Pods-UserInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserInfo.release.xcconfig"; path = "Target Support Files/Pods-UserInfo/Pods-UserInfo.release.xcconfig"; sourceTree = "<group>"; };
-		93A7E6CA2528853C0009D77F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93A7E6CA2528853C0009D77F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "/Users/wangpin/mobileProj/mobile/UserInfo/UserInfo/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
 		93C5E7F4251E572A00A3C4AA /* CreatedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedCell.swift; sourceTree = "<group>"; };
 		93C5E7F7251E65B300A3C4AA /* JoinedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedCell.swift; sourceTree = "<group>"; };
 		B53E194DA4F3495619C294E7 /* Pods_UserInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +56,6 @@
 				3506CB9DA327857FF133A8B2 /* Pods-UserInfo.debug.xcconfig */,
 				858D6EA2B67B8BC880E4E0F2 /* Pods-UserInfo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

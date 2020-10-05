@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
@@ -67,7 +68,13 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func exitToHere(sender: UIStoryboardSegue){
+        //
+    }
+    
+    @IBAction func saveAndExit(sender: UIStoryboardSegue){
+        // save
 
-
+    }
 }
 
